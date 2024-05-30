@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagenes</title>
+    <link rel="stylesheet" href="CSS/galeria.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/Logo.jpg" alt="Logo del restaurante" class="logo">
+        </div>
+        <div class="header-center">
+            <form>
+                <div class="search">
+                    <input class="search-input" type="search" placeholder="Buscar">
+                </div>
+            </form>
+            <div class="menu">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icon" alt="">
+                </label>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="gallery.html">Galería</a></li>
+                        <li><a href="usersFeedSection.html">Califícanos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-buttons">
+                <button class="header-btn"><img src="images/WhatsApp.webp" alt="WhatsApp"></button>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/carrito.png" class="header-btn" id="img-carrito" alt="Imagen carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <button id="vaciar-carrito" class="btn-vaciar">vaciar carrito</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="galeria">
+            <img src="images/burguer.jpg" alt="Descripción">
+            <img src="images/Desserts/Dessert3.jpg" alt="Descripción">
+            <img src="images/Drinks/Lemonade.jpg" alt="Descripción">
+            <img src="images/pizzas/5.png" alt="Descripción">
+            <img src="images/Desserts/Dessert4.jpg" alt="Descripción">
+            <img src="images/sushi.jpg" alt="Descripción">
+            <img src="images/Drinks/SabourizedWater.jpg" alt="Descripción">
+            <img src="images/Wings/5.jpg" alt="Descripción">
+    
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones Del Usuario</title>
+    <link rel="stylesheet" href="CSS/usersFeedSectionStyle.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/Logo.jpg" alt="Logo del restaurante" class="logo">
+        </div>
+        <div class="header-center">
+            <form>
+                <div class="search">
+                    <input class="search-input" type="search" placeholder="Buscar">
+                </div>
+            </form>
+            <div class="menu">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icon" alt="">
+                </label>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="gallery.html">Galería</a></li>
+                        <li><a href="usersFeedSection.html">Califícanos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-buttons">
+                <button class="header-btn"><img src="images/WhatsApp.webp" alt="WhatsApp"></button>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/carrito.png" class="header-btn" id="img-carrito" alt="Imagen carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <button id="vaciar-carrito" class="btn-vaciar">vaciar carrito</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Sección de selección de categoría -->
+        <div class="container" id="category-container">
+            <h1>Selecciona el tipo de Servicio</h1>
+            <label for="category-select">Selecciona una categoría:</label>
+            <select id="category-select">
+                <option value="">--Seleccione--</option>
+                <option value="restaurantes">Restaurantes</option>
+                <option value="domicilios">Domicilios</option>
+            </select>
+        </div>
+
+        <!-- Sección de encuesta de experiencia para Restaurantes -->
+        <div class="container" id="restaurant-survey-container" style="display: none;">
+            <h1>Encuesta de Experiencia - Restaurantes</h1>
+            <form id="restaurant-survey-form">
+                <div class="survey-question">
+                    <label for="question1-restaurante">1. Amabilidad y atención:</label>
+                    <select id="question1-restaurante" name="question1-restaurante">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <div class="survey-question">
+                    <label for="question2-restaurante">2. Calidad y presentación del producto:</label>
+                    <select id="question2-restaurante" name="question2-restaurante">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <div class="survey-question">
+                    <label for="question3-restaurante">3. Agilidad con tu pedido:</label>
+                    <select id="question3-restaurante" name="question3-restaurante">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <div class="survey-question">
+                    <label for="question4-restaurante">4. Ambiente del lugar:</label>
+                    <select id="question4-restaurante" name="question4-restaurante">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Sección de encuesta de experiencia para Domicilios -->
+        <div class="container" id="delivery-survey-container" style="display: none;">
+            <h1>Encuesta de Experiencia - Domicilios</h1>
+            <form id="delivery-survey-form">
+                <div class="survey-question">
+                    <label for="question1-domicilio">1. Amabilidad y atención del domiciliario:</label>
+                    <select id="question1-domicilio" name="question1-domicilio">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <div class="survey-question">
+                    <label for="question2-domicilio">2. Calidad y presentación del producto:</label>
+                    <select id="question2-domicilio" name="question2-domicilio">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <div class="survey-question">
+                    <label for="question3-domicilio">3. Agilidad con tu domicilio:</label>
+                    <select id="question3-domicilio" name="question3-domicilio">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="JS/feedSection.js"></script>
+</body>
+</html>
